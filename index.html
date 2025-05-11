@@ -28,11 +28,15 @@
 
         <ul>
             <li class="menu-link menu-logo"><a href="#"><img src="images/logo.png"></a></li>
-            <li class="menu-link"><a href="#latest-news-section">Latest News</a></li>
-            <li class="menu-link"><a href="#about-section">About</a></li>
-            <li class="menu-link"><a href="#merch-section">Merch</a></li>
-            <li class="menu-link"><a href="#vendors">Vendors</a></li>
-            <li class="menu-link"><a href="#contact-section">Contact</a></li>
+            <li class="menu-link"><a href="#latest-news-section" data-news="title"></a></li>
+            <li class="menu-link"><a href="#about-section" data-about="title"></a></li>
+            <li class="menu-link"><a href="#merch-section" data-merch="title"></a></li>
+            <li class="menu-link"><a href="#vendors" data-vendors="title"></a></li>
+            <li class="menu-link"><a href="#contact-section" data-contact="title"></a></li>
+            <li class="menu-link">
+                <img onclick="setLanguage('en')" class="flag" src="images/eng.png" alt="eng">
+                <img onclick="setLanguage('la')" class="flag" src="images/lao.png" alt="lao">
+            </li>
             <li>
                 <div class="menu-social-icons">
                     <a href="https://www.facebook.com/KEEPS.LOUDDER/" target="_blank"><i
@@ -42,6 +46,7 @@
 
                 </div>
             </li>
+
         </ul>
     </div>
 
@@ -61,23 +66,23 @@
 
 
     <section id="latest-news-section">
-        <h2 class="fade-in">Latest News</h2>
+        <h2 class="fade-in" data-news="title"></h2>
         <br>
-        <div class="fb-page fade-in" data-href="https://www.facebook.com/KEEPS.LOUDDER/" data-tabs="timeline" data-width=""
-            data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false"
-            data-show-facepile="false">
+        <div class="fb-page fade-in" data-href="https://www.facebook.com/KEEPS.LOUDDER/" data-tabs="timeline"
+            data-width="" data-height="" data-small-header="false" data-adapt-container-width="false"
+            data-hide-cover="false" data-show-facepile="false">
             <blockquote cite="https://www.facebook.com/KEEPS.LOUDDER/" class="fb-xfbml-parse-ignore"><a
                     href="https://www.facebook.com/KEEPS.LOUDDER/">Keeps.Loudder</a></blockquote>
         </div>
         <br>
     </section>
     <section id="about-section">
-        <h2 class="fade-in">About</h2>
+        <h2 class="fade-in" data-about="title">About</h2>
         <div class="about-container">
             <div class="about-text-container fade-in">
                 <div class="about-text-inner fade-in">
-                    <p>
-                        <b>KEEPS.LOUDDER</b> is a Lao brand making handmade bags from local communities
+                    <p data-about="text">
+                        
                     </p>
                 </div>
                 <div class="about-text-inner fade-in">
@@ -90,7 +95,7 @@
     </section>
 
     <section id="merch-section">
-        <h2 class="fade-in">Merch</h2>
+        <h2 class="fade-in" data-merch="title">Merch</h2>
         <div class="carousel-title fade-in">
             <h3></h3>
             <div class="carousel-btn-container">
@@ -128,7 +133,7 @@
     <!-- Associated Acts -->
     <section id="vendors">
         <div class="vendors">
-            <h2>Vendors</h2>
+            <h2 data-vendors="title">Vendors</h2>
         </div>
         <div class="x-row">
             <div class="half-screen intersect-rect-2">
@@ -136,7 +141,7 @@
                     <div class="sliding-block"> </div>
                     <img class="half-image-2" src="images/lao-textile.jpg" alt="">
 
-                    <h1 class="half-text-2">Lao Textile Museum</h1>
+                    <h1 class="half-text-2" data-vendors="text1"></h1>
                 </div>
 
             </div>
@@ -145,7 +150,7 @@
                     <div class="sliding-block"></div>
                     <img class="half-image-2" src="images/vien-center.jpg" alt="">
 
-                    <h1 class="half-text-2">Vientiane Center</h1>
+                    <h1 class="half-text-2" data-vendors="text2"></h1>
                 </div>
 
             </div>
@@ -155,21 +160,21 @@
     <!-- CONTACT CONTAINER -->
     <section id="contact-section">
         <div class="contact-container">
-            <h2 class="fade-in">Contact</h2>
+            <h2 class="fade-in" data-contact="title"></h2>
             <form action="">
                 <div class="label-input-container">
-                    <label for="name">Name:</label>
+                    <label for="name" data-contact="text1"></label>
                     <input type="text" name="name" id="name" required autocomplete="false">
                 </div>
                 <div class="label-input-container">
-                    <label for="email">Email:</label>
+                    <label for="email" data-contact="text2"></label>
                     <input type="email" name="email" id="Email" required autocomplete="false">
                 </div>
                 <div class="label-input-container">
-                    <label for="message">Message:</label>
+                    <label for="message" data-contact="text3"></label>
                     <textarea name="message" id="message" cols="30" rows="10" required autocomplete="false"></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" data-contact="text4"></button>
 
             </form>
         </div>

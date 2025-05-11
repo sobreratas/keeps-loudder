@@ -133,6 +133,18 @@ h2 {
   transition: 0.3s ease-in;
 }
 
+.flag{
+  height: 50px;
+  width: 80px !important;
+  margin-top: 20px !important;
+}
+
+.flag:hover{
+  cursor: pointer;
+  filter: brightness(75%);
+  transition: 0.3s ease-in-out;
+}
+
 /*** HEADER STYLES ***/
 .header-section {
   background-image: url("images/hero-background.png");
