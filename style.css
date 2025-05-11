@@ -431,6 +431,12 @@ h2 {
   font-size: 1.2rem;
 }
 
+.about-text-inner img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
 @media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
