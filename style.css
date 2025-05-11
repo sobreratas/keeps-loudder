@@ -904,6 +904,10 @@ h2 {
     width: 100%;
   }
 
+  .contact-container {
+    background-attachment: scroll;
+  }
+
   .half-screen {
     flex-basis: 100%;
   }
