@@ -285,8 +285,12 @@ h2 {
     width: 100%;
   }
 
+  .logo {
+    top: 30%;
+  }
+
   .logo img {
-    width: 80%;
+    width: 90%;
   }
 }
 
