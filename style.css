@@ -133,16 +133,21 @@ h2 {
   transition: 0.3s ease-in;
 }
 
-.flag{
+.us-flag, .lao-flag{
   height: 50px;
   width: 80px !important;
   margin-top: 20px !important;
+  margin-right: 10px;
 }
 
-.flag:hover{
+.us-flag:hover, .lao-flag:hover {
   cursor: pointer;
   filter: brightness(75%);
   transition: 0.3s ease-in-out;
+}
+
+.us-flag.active, .lao-flag.active {
+  outline: 5px solid yellow;
 }
 
 /*** HEADER STYLES ***/
