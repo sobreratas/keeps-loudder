@@ -347,15 +347,12 @@ const contactTranslations = {
 function setLanguage(lang) {
   const usFlagEl = document.querySelector(".us-flag");
   const laoFlagEl = document.querySelector(".lao-flag");
-  console.log(laoFlagEl);
   if (lang === "en") {
     usFlagEl?.classList.add("active");
     laoFlagEl?.classList.remove("active");
-    // console.log(usFlagEl.classList)
   } else {
     laoFlagEl?.classList.add("active");
     usFlagEl?.classList.remove("active");
-    //  console.log(laoFlagEl.classList)
   }
 
   document.querySelectorAll("[data-news]").forEach((el) => {
@@ -373,12 +370,12 @@ function setLanguage(lang) {
     el.textContent = merchTranslations[lang][merchKey] || merchKey;
   });
 
-    document.querySelectorAll("[data-vendors]").forEach((el) => {
+  document.querySelectorAll("[data-vendors]").forEach((el) => {
     const vendorsKey = el.getAttribute("data-vendors");
     el.textContent = vendorsTranslations[lang][vendorsKey] || vendorsKey;
   });
 
-      document.querySelectorAll("[data-contact]").forEach((el) => {
+  document.querySelectorAll("[data-contact]").forEach((el) => {
     const contactKey = el.getAttribute("data-contact");
     el.textContent = contactTranslations[lang][contactKey] || contactKey;
   });
