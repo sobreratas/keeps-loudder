@@ -982,6 +982,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .half-image {
@@ -1025,11 +1026,13 @@ h2 {
   height: 100%;
   transform: translateX(-100%);
   position: relative;
+  border-radius: 20px;
 }
 
 .sliding-block.show {
   animation: slideIn 0.5s ease forwards;
   transform: translateX(0);
+  border-radius: 20px;
 }
 
 .half-image-2 {
@@ -1038,12 +1041,14 @@ h2 {
   height: 100%;
   width: 100%;
   opacity: 32% !important;
+  border-radius: 20px;
 }
 
 .half-image-2.show {
   opacity: 1;
   transition: 0.5s ease-in;
   transition-delay: 0.2s;
+  border-radius: 20px;
 }
 
 .half-text-2 {
