@@ -133,20 +133,23 @@ h2 {
   transition: 0.3s ease-in;
 }
 
-.us-flag, .lao-flag{
+.us-flag,
+.lao-flag {
   height: 50px;
   width: 80px !important;
   margin-top: 20px !important;
   margin-right: 10px;
 }
 
-.us-flag:hover, .lao-flag:hover {
+.us-flag:hover,
+.lao-flag:hover {
   cursor: pointer;
   filter: brightness(75%);
   transition: 0.3s ease-in-out;
 }
 
-.us-flag.active, .lao-flag.active {
+.us-flag.active,
+.lao-flag.active {
   outline: 5px solid yellow;
 }
 
@@ -320,8 +323,8 @@ h2 {
 .latest-news-card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: start;
   gap: 30px;
   padding: 1rem;
   width: 100%;
@@ -345,14 +348,22 @@ h2 {
   border: 1px solid rgb(246, 246, 246);
 }
 
-.fb-page {
-  display: block;
-  margin: 0;
+.tiktok-div {
+  width: 50%;
 }
 
+.tiktok-div blockquote {
+  height: 100%;
+}
+
+/* .fb-page {
+  
+  width: 50%;
+} */
+/* 
 .fb-page span iframe {
   width: 100% !important;
-}
+} */
 
 .date-container {
   display: flex;
@@ -397,9 +408,9 @@ h2 {
     font-size: 2rem;
   }
 
-  .release-listen-btn {
-    display: block;
-  }
+.tiktok-div {
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 600px) {
