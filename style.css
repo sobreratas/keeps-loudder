@@ -200,7 +200,15 @@ h2 {
   left: 30px;
 }
 
-.top-left-social-icons i {
+.mobile-social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.top-left-social-icons i,
+.mobile-social-icons i {
   color: #121212;
   opacity: 0.8;
   font-size: 36px;
@@ -262,10 +270,19 @@ h2 {
     visibility: hidden;
   }
 
-  /* .menu-social-icons {
+  .mobile-social-icons {
+    margin: 0 8px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+}
+
+/* .menu-social-icons {
     visibility: visible;
   } */
-}
 
 @keyframes logoFadeIn {
   from {
@@ -411,9 +428,9 @@ h2 {
     font-size: 2rem;
   }
 
-.tiktok-div {
-  width: 100%;
-}
+  .tiktok-div {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -425,46 +442,46 @@ h2 {
 /* SHAPE DIVIDERS */
 
 .custom-shape-divider-bottom-1747925426 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1747925426 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 104px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 104px;
 }
 
 .custom-shape-divider-bottom-1747925426 .shape-fill {
-    fill: #F2F2F2;
+  fill: #f2f2f2;
 }
 
 .custom-shape-divider-top-1747925694 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-top-1747925694 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 104px;
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 104px;
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-top-1747925694 .shape-fill {
-    fill: #F2F2F2;
+  fill: #f2f2f2;
 }
 
 /* ABOUT */
