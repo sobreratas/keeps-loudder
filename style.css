@@ -38,7 +38,6 @@ h2 {
   z-index: 99999999;
   background-color: white;
   outline: #121212 solid 0.5px;
-  border-radius: 6px;
 }
 
 .hamburger-container:hover {
