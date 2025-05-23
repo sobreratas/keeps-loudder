@@ -297,7 +297,7 @@ const newsTranslations = {
 const aboutTranslations = {
   en: {
     title: "About",
-    text: "KEEPS.LOUDDER is a Lao brand making handmade bags from local communities",
+    text: 'The name KEEPS.LOUDDER has two meanings. Firstly, it is our commitment to preserving the authenticity of Lao culture, which is represented by "LOUDDER", phonetically resembling "Lao Der" (ລາອ-ເດີ້), emphasizing our connection to Lao heritage. Secondly, it reflects our goal to increase the brand\'s recognition, making it "louder" and more well-known.',
   },
   la: {
     title: "ກ່ຽວກັບ",
