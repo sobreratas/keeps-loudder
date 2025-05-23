@@ -285,6 +285,15 @@ intersectRect2.forEach((halfImage2) => {
 });
 
 //TRANSLATIONS
+const langTranslations = {
+  en: {
+    title: "Language",
+  },
+  la: {
+    title: "ພາສາ",
+  },
+};
+
 const newsTranslations = {
   en: {
     title: "Latest News",
@@ -378,5 +387,10 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-contact]").forEach((el) => {
     const contactKey = el.getAttribute("data-contact");
     el.textContent = contactTranslations[lang][contactKey] || contactKey;
+  });
+
+    document.querySelectorAll("[data-lang]").forEach((el) => {
+    const langKey = el.getAttribute("data-lang");
+    el.textContent = langTranslations[lang][langKey] || langKey;
   });
 }
