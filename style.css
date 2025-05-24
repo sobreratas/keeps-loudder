@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Archivo Narrow, Helvetica, Arial, sans-serif;
-   letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
 }
 
 html,
@@ -158,8 +158,8 @@ h2 {
 
 /*** HEADER STYLES ***/
 .header-section {
-  background-image: url("images/hero-background.png");
-  background-color: rgba(0, 0, 0, 1);
+  background-image: url("images/hero-background-new.png");
+  background-color: rgb(239, 239, 239);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,19 +179,19 @@ h2 {
 
 @keyframes animate {
   0% {
-    background-image: url("images/hero-background.png");
+    background-image: url("images/hero-background-new.png");
   }
 
   25% {
-    background-image: url("images/hero-background2.png");
+    background-image: url("images/hero-background2-new.png");
   }
 
   50% {
-    background-image: url("images/hero-background3.png");
+    background-image: url("images/hero-background3-new.png");
   }
 
   75% {
-    background-image: url("images/hero-background4.png");
+    background-image: url("images/hero-background4-new.png");
   }
 }
 
@@ -202,15 +202,7 @@ h2 {
   left: 30px;
 }
 
-.mobile-social-icons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  visibility: hidden;
-}
-
-.top-left-social-icons i,
-.mobile-social-icons i {
+.top-left-social-icons i {
   color: #121212;
   opacity: 0.8;
   font-size: 36px;
@@ -278,20 +270,11 @@ h2 {
     visibility: hidden;
   }
 
-  .mobile-social-icons {
-    margin: 0 8px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: visible;
-  }
-
   .iso-bag {
     display: block;
-  margin-top: 50px;
-  width: 20%;
-}
+    margin-top: 50px;
+    width: 20%;
+  }
 }
 
 @keyframes logoFadeIn {
@@ -452,25 +435,25 @@ h2 {
 /* SHAPE DIVIDERS */
 /* HEADER WAVE */
 .header-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .header-wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 57px;
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 57px;
+  transform: rotateY(180deg);
 }
 
 .header-wave .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /*ABOUT WAVE */
@@ -522,45 +505,45 @@ h2 {
 /* CONTACT WAVE */
 
 .contact-wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .contact-wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 57px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 57px;
 }
 
 .contact-wave .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .footer-wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 38px;
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 38px;
+  transform: rotateY(180deg);
 }
 
 .footer-wave .shape-fill {
-    fill: #F2F2F2;
+  fill: #f2f2f2;
 }
 
 /* ABOUT */
@@ -616,7 +599,7 @@ h2 {
 
   .contact-wave .shape-fill {
     fill: none;
-}
+  }
 }
 
 /* GALLERY CAROUSEL */
@@ -1081,7 +1064,7 @@ h2 {
   padding: 12px;
   font-size: 1rem;
   border: 2px solid #121212;
-   border-radius: 40px;
+  border-radius: 40px;
   text-transform: uppercase;
 }
 
