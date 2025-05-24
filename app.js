@@ -284,6 +284,57 @@ intersectRect2.forEach((halfImage2) => {
   observer2.observe(halfImage2);
 });
 
+//CARD CLASS INTERSECTION OBSERVER 
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+},
+    {
+        threshold: .5,
+    })
+
+cards.forEach(card => {
+    observer.observe(card)
+})
+
+//LEFT CARD CLASS INTERSECTION OBSERVER 
+const leftCards = document.querySelectorAll(".left-card");
+
+const leftObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+},
+    {
+        threshold: .5,
+    })
+
+leftCards.forEach(leftCard => {
+    observer.observe(leftCard)
+})
+
+//RIGHT CLASS INTERSECTION OBSERVER 
+const rightCards = document.querySelectorAll(".right-card");
+
+const rightObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+},
+    {
+        threshold: .5,
+    })
+
+rightCards.forEach(rightCard => {
+    observer.observe(rightCard)
+})
+
 //TRANSLATIONS
 const langTranslations = {
   en: {
