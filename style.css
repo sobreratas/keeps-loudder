@@ -247,9 +247,11 @@ h2 {
   z-index: 22;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo img {
+.header-logo {
   width: 50%;
   z-index: 55;
   animation: logoFadeIn 1.2s linear;
@@ -257,6 +259,10 @@ h2 {
 
 .header-content img {
   width: 100%;
+}
+
+.iso-bag {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -280,6 +286,12 @@ h2 {
     transform: translate(-50%, -50%);
     visibility: visible;
   }
+
+  .iso-bag {
+    display: block;
+  margin-top: 50px;
+  width: 20%;
+}
 }
 
 @keyframes logoFadeIn {
@@ -310,7 +322,7 @@ h2 {
   }
 
   .logo {
-    top: 30%;
+    top: 50%;
   }
 
   .logo img {
