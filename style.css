@@ -1109,6 +1109,10 @@ h2 {
   flex-direction: column;
 }
 
+.label-input-container label {
+  margin-left: 12px;
+}
+
 @media only screen and (max-width: 600px) {
   .contact-container form {
     width: 100%;
